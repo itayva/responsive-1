@@ -1,0 +1,197 @@
+
+/* LAYOUT */
+
+.main-layout {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+/* HELPER */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-basis50 {
+    flex-basis: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+.warp{
+    flex-wrap:wrap;
+}
+
+/* end helpers */
+/* normal screen */
+.bgc-pic{
+    background-image: url(./assets/img/bgc-pic.jpg);
+    margin-top: 0;
+    height: 600px;
+    
+}
+button {
+    color: white;
+    background-color: green;
+}
+.rform{
+    background-color: white;
+    width: 400px;
+    
+   padding: 40px;
+   
+}
+
+
+h1,h2{
+    color: white;
+    
+}
+.rform p {
+    flex-wrap: wrap;
+}
+header img{
+    display: inline;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+header p {
+    display: inline;
+    font-size: 50px;
+    font-weight: bold;
+}
+.cards,h2{
+    color:black;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cards{
+  flex: 1;
+  gap: 10px;
+  
+    
+}
+.cards img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  
+}
+/* .cards .card-body{  */
+    /* justify-content:space-around; */
+/* } */
+.bgc2{
+    background-color: grey;
+    padding: 30px;
+    
+}
+.lcol img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    
+}
+.rcol img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+   
+}
+.lcol.rcol{
+    flex: 1;
+    
+}
+.lcol{
+    border-right: solid 5px grey;
+
+    padding: 30px 25px;
+}
+.rcol{
+    border-left: solid 5px grey;
+    padding: 30px 25px;
+}
+.about{
+    width: 90%;
+    text-align: center;
+    padding: 50px 25px;
+   
+}
+
+footer,p{
+    display: inline;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.fimg{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    justify-content: flex-end;
+}
+
+    
+
+.sec-p{
+    font-size: small;
+}
+/* mobile screen */
+@media screen and (max-width: 650px) {
+ header {
+    text-align: center;
+ }
+.bgc-pic{
+    flex-direction: column;
+    
+}  
+.rform.inform{
+    flex-direction: column;
+}
+.cards{
+    flex-direction: column;
+}  
+.do {
+    flex-direction: column;
+}
+.rcol{border: none;
+}.lcol{
+    border: none;
+}
+
+}
+
+
